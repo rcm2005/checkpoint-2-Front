@@ -1,0 +1,84 @@
+:root {
+    --cor-pri: #ba1616;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+nav{
+    
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: var(--cor-pri);
+    list-style: none;
+
+    /* background-color: antiquewhite;
+    display: block; */
+}
+
+nav li a {
+    color: white; 
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none; 
+
+}
+
+
+nav a:hover {
+    background-color: #ddd; 
+    color: rgb(107, 6, 6); 
+
+
+
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.conteudo .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    height: 50%;
+
+}
+.conteudo .box input {
+    border: 2px solid var(--cor-pri);
+    padding: 5px 15px;
+
+    margin: 10px;
+
+}
+.conteudo .box button{
+    width: 50px;
+    margin: 5px 85px;
+    background-color: transparent;
+    border-color: var(--cor-pri);
+    color: var(--cor-pri);
+}
+@media screen and (max-width: 480px) {
+    .conteudo {
+        flex-direction: column;
+    }
+    .conteudo .box{
+        margin: 0;
+    }
+    .imagem-login{
+        margin-top: 60px;
+    }
+}
+
+
